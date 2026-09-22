@@ -1,6 +1,6 @@
 
 public class Lab1 {
-
+     // Отдельный статический метод для вычисления каждого элоемента e[i][j] , принимаються элементы массивов x и c тк от них зависит значение элемента e
     public static double eElement(long ci, double xj) {
         if (ci == 10) {
             return Math.atan(1.0 / Math.exp(Math.abs(Math.asin(1.0 / Math.exp(Math.abs(xj))))));
@@ -10,7 +10,7 @@ public class Lab1 {
             return Math.cbrt(Math.atan(Math.sin(Math.cos(xj)*(1 - Math.pow(xj*(1 - xj), 2)))));
         }
     }
-
+    // Отдельный статический метод для вывода матрицы 
     public static void prtMatrix(double[][] m) {
         for (int i = 0; i < m.length; i++) {
             for (int j = 0; j < m[i].length; j++) {
@@ -19,8 +19,7 @@ public class Lab1 {
             System.out.println();
         }
     }
-
-    public static void main() {
+    public static void main(String[] arg) {
         long[] c = new long[10];
         for (int i = 0; i < c.length; i++) {
             c[i] = 4 + 2 * i;
