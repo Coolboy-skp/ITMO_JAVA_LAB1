@@ -26,7 +26,7 @@ public class Lab1 {
     public static void prtMatrix(double[][] m) {
         for (int i = 0; i < m.length; i++) {
             for (int j = 0; j < m[i].length; j++) {
-                System.out.print(Math.round(m[i][j] * 1000) / 1000.0 + " ");
+                System.out.printf("%.3f ", m[i][j]);
             }
             System.out.println();
         }
